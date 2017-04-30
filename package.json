@@ -1,0 +1,73 @@
+{
+  "name": "movie-website",
+  "version": "1.0.0",
+  "description": "前后端网站项目开发",
+  "main": "index.js",
+  "scripts": {
+    "start": "set NODE_ENV=development && webpack-dev-server --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyctea/Movie-website.git"
+  },
+  "author": "lyctea",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lyctea/Movie-website/issues"
+  },
+  "homepage": "https://github.com/lyctea/Movie-website#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-import": "^1.1.1",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "css-loader": "^0.27.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.10.1",
+    "html-webpack-plugin": "^2.28.0",
+    "img-loader": "^2.0.0",
+    "json-loader": "^0.5.4",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.2",
+    "postcss-loader": "^1.3.3",
+    "precss": "^1.4.0",
+    "react-transform-hmr": "^1.0.4",
+    "style-loader": "^0.16.1",
+    "svg-sprite-loader": "^0.3.0",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.3.2",
+    "webpack-dev-server": "^2.4.2",
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "ejs": "~2.5.5",
+    "express": "~4.14.1",
+    "jquery": "^3.1.1",
+    "mongoose": "^4.8.6",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.2"
+  },
+  "dependencies": {
+    "antd": "^2.9.1",
+    "antd-mobile": "^1.0.7",
+    "es6-promise": "^4.1.0",
+    "fetch-jsonp": "^1.0.6",
+    "history": "^4.6.1",
+    "isomorphic-fetch": "^2.2.1",
+    "jade": "^1.11.0",
+    "jquery": "^3.2.1",
+    "moment": "^2.18.1",
+    "object-assign": "^4.1.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "react-router-dom": "^4.0.0",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.1",
+    "redux-thunk": "^2.2.0",
+    "underscore": "^1.8.3"
+  }
+}
