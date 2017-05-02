@@ -1,6 +1,7 @@
 import React,{ Component } from 'react'
 import HomePage from '../container/HomePage'
 import Detail from '../container/Detail'
+import Classify from '../container/Classify'
 
 import createBrowserHistory from 'history/createBrowserHistory'
 
@@ -16,6 +17,7 @@ const Root = () => (
         <div>
             <Route exact path="/" component={HomePage}/>
             <Route path="/detail" component={Detail}/>
+            <Route path="/classify" component={Classify}/>
         </div>
     </Router>
 )
