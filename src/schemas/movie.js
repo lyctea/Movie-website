@@ -1,5 +1,4 @@
-//数据库的模式 定义存储类型和静态方法
-var mongoose = require('mongoose')
+var mongoose = require('mongoose');
 
 var MovieSchema = new mongoose.Schema({
     doctor: String,
@@ -8,6 +7,7 @@ var MovieSchema = new mongoose.Schema({
     summary: String,
     country: String,
     flash: String,
+    poster: String,
     year: Number,
     meta: {
         createAt: {
@@ -17,18 +17,18 @@ var MovieSchema = new mongoose.Schema({
         updateAt: {
             type: Date,
             default: Date.now()
-        }
-    }
-})
+        },
+    },
+});
 
-MovieSchema.pre('save',function (next) {
-    if (this.inNew) {
+MovieSchema.pre('save', function (next) {
+    if (this.isNew) {
         this.meta.createAt = this.meta.updateAt = Date.now();
-    }else {
+    } else {
         this.meta.updateAt = Date.now();
-    }
+    };
     next();
-})
+});
 
 MovieSchema.statics = {
     fetch: function (cb) {
@@ -37,11 +37,11 @@ MovieSchema.statics = {
             .sort('meta.updateAt')
             .exec(cb)
     },
-    findById: function (id,cb) {
+    findById: function (id, cb) {
         return this
-            .findOne({ _id: id})
+            .findOne({ _id: id })
             .exec(cb)
-    }
-}
+    },
+};
 
 module.exports = MovieSchema
